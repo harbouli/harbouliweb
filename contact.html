@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/contact.css">
+    <link rel="stylesheet" href="./Style/loading.css">
+    <link rel="icon" href="./Style/Img/My Logo7.svg" type="image/SVG +XML">
+    <script src="./Script/app.js"></script>
+    <title>HRWeb</title>
+</head>
+<body>
+    <div class="loading">
+        <div class='body'>
+            <span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class='base'>
+              <span><?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                <g>
+                  <polygon points="222.908,71.061 222.908,217.791 72.087,217.791 72.087,71.061 0,71.061 0,428.939 72.087,428.939 72.087,282.21 
+                    222.908,282.21 222.908,428.939 223.411,428.939 223.411,71.061 	"/>
+                  <path d="M416.155,293.969c25.218-7.837,44.815-21.218,58.794-40.134c13.97-18.916,20.959-41.324,20.959-67.23
+                    c0-35.101-11.333-63.14-33.998-84.102c-22.669-20.961-55.302-31.442-97.905-31.442h-69.009h-71.586v357.877h71.586h0.502v-124.43
+                    v-2.361v-64.929v-1.943v-99.286h73.108c17.04,0,30.243,4.689,39.622,14.06c9.371,9.379,14.06,21.561,14.06,36.555
+                    c0,15.002-4.688,27.184-14.06,36.554c-9.379,9.379-22.582,14.06-39.622,14.06h-53.015v64.929h30.521l77.712,126.79H500
+                    L416.155,293.969z"/>
+                </g>
+                </svg>
+                </span>
+                <h1 class="h1-lo">Loading ...</h1>
+            </div>
+          </div>
+          <div class='longfazers'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+    <div class="goback"><a href="./index.html"><?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40" height="40" viewBox="0 0 122.881 94.163" enable-background="new 0 0 122.881 94.163" xml:space="preserve"><g><polygon fill-rule="evenodd" clip-rule="evenodd" points="0,47.071 47.093,0 91.535,0 60.169,31.366 122.881,31.366 122.881,62.797 60.169,62.797 91.535,94.163 47.093,94.163 0,47.071"/></g></svg></a></div>
+    <div class="container">
+             <h2 class="text">Contact Me</h2>
+                <form action="/ajax/email" class="form" method="POST" onsubmit="return submitEmailForm(this);">
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" name="firstname"  required />
+                            <div class="underline"></div>
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" name="lastname" required />
+                            <div class="underline"></div>
+                            <label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="email" name="email"  required />
+                            <div class="underline"></div>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" name="subject"  required />
+                            <label for="">Subject</label>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                        <div class="form-row">
+                        <div class="input-data textarea " rows="8" cols="80">
+                            <textarea name="message"  required></textarea>
+                            <div class="underline"></div>
+                            <label for="">Write your message</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <button type="submit" class="submit">send</button>
+                        </div>
+                    </div>
+                </form>
+    </div>
+    <script>
+        let loader = document.querySelector('.loading');
+
+window.addEventListener('load', function () {
+   // spinnerWrapper.style.display = 'none';
+    loader.parentElement.removeChild(loader);
+});
+    </script>
+</body>
+</html>
